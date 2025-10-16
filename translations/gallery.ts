@@ -114,8 +114,8 @@ export const galleryTranslations = {
 
   // Gallery Component Items
   "gallery.item1.title": {
-    mr: "प्रजासत्ताक दिन साजरा 2024",
-    en: "Republic Day Celebration 2024",
+    mr: "विकास कामे",
+    en: "Development Work",
   },
   "gallery.item1.category": {
     mr: "कार्यक्रम",

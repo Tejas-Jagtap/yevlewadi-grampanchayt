@@ -105,7 +105,7 @@ export default function GalleryPage() {
               {t("gallery.festivals")}
             </p>
           </div>
-          <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6 text-center">
+          {/* <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6 text-center">
             <FaImage className="text-3xl sm:text-4xl text-government-orange mx-auto mb-2" />
             <p className="text-2xl sm:text-3xl font-bold text-government-blue">
               {images.filter((img) => img.category === "festivals").length}
@@ -113,7 +113,7 @@ export default function GalleryPage() {
             <p className="text-xs sm:text-sm text-gray-600">
               {t("gallery.office")}
             </p>
-          </div>
+          </div> */}
         </div>
 
         {/* Category Filter */}
