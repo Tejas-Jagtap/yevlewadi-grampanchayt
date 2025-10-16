@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 10, 25, 49;
+  /* #0A1931 - Dark Navy */
+  --background-start-rgb: 246, 250, 253;
+  /* #F6FAFD - Very Light Blue */
+  --background-end-rgb: 246, 250, 253;
+  --accent-navy: 10, 25, 49;
+  /* #0A1931 */
+  --accent-deep-blue: 26, 61, 99;
+  /* #1A3D63 */
+  --accent-medium-blue: 74, 127, 167;
+  /* #4A7FA7 */
+  --accent-light-blue: 179, 207, 229;
+  /* #B3CFE5 */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 10, 25, 49;
+    --background-start-rgb: 246, 250, 253;
+    --background-end-rgb: 246, 250, 253;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  font-family: "Noto Sans Devanagari", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F6FAFD;
+  /* Very light blue */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4A7FA7;
+  /* Medium blue */
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1A3D63;
+  /* Deep blue */
+}
