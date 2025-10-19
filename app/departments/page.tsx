@@ -9,6 +9,9 @@ import {
   FaGraduationCap,
   FaUsers,
   FaArrowRight,
+  FaLandmark,
+  FaBolt,
+  FaHardHat,
 } from "react-icons/fa";
 import { FaPaw } from "react-icons/fa";
 
@@ -17,14 +20,13 @@ export default function DepartmentsPage() {
 
   const subPages = [
     {
-      nameKey: "dept.agriculture",
-      name: t("dept.agriculture.name"),
-      description: t("dept.agriculture.fullDesc"),
-      head: t("dept.agriculture.departmentHead"),
-      phone: t("dept.agriculture.departmentHeadPhone"),
-      icon: FaSeedling,
-      // link: "/departments/agriculture",
-      color: "from-green-400 to-green-600",
+      nameKey: "dept.revenue",
+      name: t("dept.revenue.name"),
+      description: t("dept.revenue.fullDesc"),
+      head: t("dept.revenue.head"),
+      phone: t("dept.revenue.departmentHeadPhone"),
+      icon: FaLandmark, // Example icon
+      color: "from-yellow-400 to-yellow-600",
     },
     {
       nameKey: "dept.health",
@@ -33,28 +35,34 @@ export default function DepartmentsPage() {
       head: t("dept.health.departmentHead"),
       phone: t("dept.health.departmentHeadPhone"),
       icon: FaHeartbeat,
-      // link: "/departments/health",
       color: "from-red-400 to-red-600",
     },
     {
-      nameKey: "dept.education",
-      name: t("dept.animal_husbandry.name"),
-      description: t("dept.education.fullDesc"),
-      head: t("dept.animal_husbandry.departmentHead"),
-      phone: t("dept.animal_husbandry.departmentHeadPhone"),
-      icon: FaPaw,
-      // link: "/departments/education",
-      color: "from-blue-400 to-blue-600",
+      nameKey: "dept.agriculture",
+      name: t("dept.agriculture.name"),
+      description: t("dept.agriculture.fullDesc"),
+      head: t("dept.agriculture.departmentHead"),
+      phone: t("dept.agriculture.departmentHeadPhone"),
+      icon: FaSeedling,
+      color: "from-green-400 to-green-600",
     },
     {
-      nameKey: "dept.Village_Revenue_Officer",
-      name: t("dept.Village_Revenue_Officer"),
-      description: t("dept.Village_Revenue_Officer_des"),
-      head: t("dept.Village_Revenue_OfficerHead"),
-      phone: t("dept.Village_Revenue_OfficerHeadPhone"),
-      icon: FaUsers,
-      // link: "/departments/social-welfare",
-      color: "from-purple-400 to-purple-600",
+      nameKey: "dept.electricity",
+      name: t("intro.electricityDepat"),
+      description: t("dept.electricity.fullDesc"),
+      head: t("dept.electricity.departmentHead"),
+      phone: t("dept.electricity.departmentHeadPhone"),
+      icon: FaBolt,
+      color: "from-yellow-500 to-yellow-700",
+    },
+    {
+      nameKey: "dept.nrega",
+      name: t("intro.dept.nrega"),
+      description: t("dept.nrega.fullDesc"),
+      head: t("dept.nrega.departmentHead"),
+      phone: t("dept.nrega.departmentHeadPhone"),
+      icon: FaHardHat,
+      color: "from-blue-400 to-blue-600",
     },
   ];
 

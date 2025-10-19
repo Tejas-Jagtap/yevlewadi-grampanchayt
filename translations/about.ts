@@ -324,6 +324,58 @@ export const aboutTranslations = {
     mr: "सरकारी नोकर्‍या",
     en: "Government Jobs",
   },
+  "intro.electricityDepat": {
+    mr: "वीज विभाग",
+    en: "Electricity Department",
+  },
+  "Electrical maintenance and wiring": {
+    mr: "वीज विभाग",
+    en: "Electrical maintenance and wiring",
+  },
+  "dept.electricity.fullDesc": {
+    mr: "विद्युत देखभाल व वायरिंग",
+    en: "Electricity Department",
+  },
+  "dept.electricity.departmentHead": {
+    mr: "प्रकाश कदम",
+    en: "Prakash Kadam",
+  },
+  "dept.electricity.departmentHeadPhone": {
+    mr: "७०३८५०२०४१",
+    en: "7038502041",
+  },
+  "intro.dept.nrega": {
+    mr: "रोजगार हमी",
+    en: "Employment Guarantee Scheme",
+  },
+  "dept.nrega.fullDesc": {
+    mr: "रोजगार हमी व सहाय्य",
+    en: "Employment guarantee and support",
+  },
+  "dept.nrega.departmentHead": {
+    mr: "अमोल अरुण पवार",
+    en: "Amol Arun Pawar",
+  },
+  "dept.nrega.departmentHeadPhone": {
+    mr: "९३५९७८१०९५",
+    en: "9359781095",
+  },
+  "dept.revenue.name": {
+    mr: "ग्राममहसूल विभाग",
+    en: "Village Revenue Department",
+  },
+  "dept.revenue.fullDesc": {
+    mr: "जमिनीची नोंदणी, महसूल व्यवस्थापन",
+    en: "Manages land records, revenue",
+  },
+  "dept.revenue.head": {
+    mr: "स्नेहलता संतोष शेळके",
+    en: "Snehalata Santosh Shelke",
+  },
+  "dept.revenue.departmentHeadPhone": {
+    mr: "७२१९५०६४५९",
+    en: "7219506459",
+  },
 
   // History Page
   "history.subtitle": {

@@ -103,7 +103,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
               <div className="bg-government-orange bg-opacity-10 p-4 rounded-lg text-center">
                 <h3 className="text-2xl sm:text-3xl font-bold text-government-orange">
-                  728
+                  {language === "en" ? "1207" : "१२०७"}
                 </h3>
                 <p className="text-gray-700 text-sm sm:text-base">
                   {t("common.population")}
@@ -111,7 +111,7 @@ export default function AboutPage() {
               </div>
               <div className="bg-government-green bg-opacity-10 p-4 rounded-lg text-center">
                 <h3 className="text-2xl sm:text-3xl font-bold text-government-green">
-                  130
+                  {language === "en" ? "251" : "२५१"}
                 </h3>
                 <p className="text-gray-700 text-sm sm:text-base">
                   {t("common.households")}

@@ -9,6 +9,9 @@ import {
   FaGraduationCap,
   FaHammer,
   FaUsers,
+  FaLandmark,
+  FaBolt,
+  FaHardHat,
 } from "react-icons/fa";
 import { FaFileAlt, FaPaw } from "react-icons/fa";
 
@@ -20,11 +23,11 @@ const Departments = () => {
   const departments = [
     {
       id: 1,
-      nameKey: "dept.agriculture",
-      icon: FaSeedling,
-      color: "from-green-400 to-green-600",
-      descriptionKey: "dept.agriculture.desc",
-      link: "/departments/agriculture",
+      nameKey: "dept.revenue.name",
+      icon: FaLandmark,
+      color: "from-yellow-300 to-yellow-500",
+      descriptionKey: "dept.revenue.fullDesc",
+      link: "/departments/revenue",
     },
     {
       id: 2,
@@ -36,19 +39,27 @@ const Departments = () => {
     },
     {
       id: 3,
-      nameKey: "dept.animal_husbandry.name",
-      icon: FaPaw,
-      color: "from-blue-400 to-blue-600",
-      descriptionKey: "dept.animal_husbandry.desc",
-      link: "/departments/education",
+      nameKey: "dept.agriculture.name",
+      icon: FaSeedling,
+      color: "from-green-400 to-green-600",
+      descriptionKey: "dept.agriculture.desc",
+      link: "/departments/agriculture",
     },
     {
       id: 4,
-      nameKey: "dept.Village_Revenue_Officer",
-      icon: FaFileAlt,
-      color: "from-yellow-400 to-yellow-600",
-      descriptionKey: "dept.Village_Revenue_Officer_des",
-      link: "/departments",
+      nameKey: "intro.electricityDepat",
+      icon: FaBolt,
+      color: "from-yellow-500 to-yellow-700",
+      descriptionKey: "dept.electricity.fullDesc",
+      link: "/departments/electricity",
+    },
+    {
+      id: 5,
+      nameKey: "intro.dept.nrega",
+      icon: FaHardHat,
+      color: "from-blue-400 to-blue-600",
+      descriptionKey: "dept.nrega.fullDesc",
+      link: "/departments/nrega",
     },
   ];
 

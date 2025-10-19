@@ -5,7 +5,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { FaUsers, FaMapMarkedAlt, FaLeaf, FaTrophy } from "react-icons/fa";
 
 export default function IntroductionPage() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   return (
     <main className="min-h-screen bg-gray-50">
@@ -46,7 +46,7 @@ export default function IntroductionPage() {
                 <FaUsers className="text-3xl text-government-orange" />
               </div>
               <h3 className="text-3xl sm:text-4xl font-bold text-government-orange mb-2">
-                1207
+                {language === "en" ? "1207" : "१२०७"}
               </h3>
               <p className="text-gray-700 text-sm sm:text-base">
                 {t("intro.totalPopulation")}
@@ -60,7 +60,7 @@ export default function IntroductionPage() {
                 <FaMapMarkedAlt className="text-3xl text-government-green" />
               </div>
               <h3 className="text-3xl sm:text-4xl font-bold text-government-green mb-2">
-                251
+                {language === "en" ? "251" : "२५१"}
               </h3>
               <p className="text-gray-700 text-sm sm:text-base">
                 {t("intro.households")}
