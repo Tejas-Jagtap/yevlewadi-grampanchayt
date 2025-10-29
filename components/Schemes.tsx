@@ -63,13 +63,6 @@ const Schemes = () => {
             </li>
           ))}
         </ul>
-        <div className="mt-4 text-center">
-          <Link href="/schemes">
-            <button className="text-[#F6FAFD] bg-[#0A1931] hover:bg-[#4A7FA7] font-semibold text-lg transition-colors duration-200 rounded-md px-4 py-3">
-              {t("schemes.viewAll")}
-            </button>
-          </Link>
-        </div>
       </div>
     </div>
   );

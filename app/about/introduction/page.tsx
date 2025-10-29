@@ -52,7 +52,8 @@ export default function IntroductionPage() {
                 {t("intro.totalPopulation")}
               </p>
               <p className="text-xs text-gray-500 mt-2">
-                {t("intro.males")}: 621 | {t("intro.females")}: 586
+                {t("intro.males")}: {language === "en" ? "621" : "६२१"} |
+                {t("intro.females")}: {language === "en" ? "586" : "५८६"}
               </p>
             </div>
             <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
@@ -65,22 +66,16 @@ export default function IntroductionPage() {
               <p className="text-gray-700 text-sm sm:text-base">
                 {t("intro.households")}
               </p>
-              <p className="text-xs text-gray-500 mt-2">
-                {t("intro.averageSize")}: 3.4 {t("intro.members")}
-              </p>
             </div>
             <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
               <div className="bg-[#0A1931] bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <FaLeaf className="text-3xl text-government-blue" />
               </div>
               <h3 className="text-3xl sm:text-4xl font-bold text-government-blue mb-2">
-                159.2
+                {language === "en" ? "159.2" : "१५९.२"}
               </h3>
               <p className="text-gray-700 text-sm sm:text-base">
                 {t("intro.totalArea")}
-              </p>
-              <p className="text-xs text-gray-500 mt-2">
-                {t("intro.agriculturalLand")}: 428 ha
               </p>
             </div>
 
@@ -131,36 +126,7 @@ export default function IntroductionPage() {
                 </div>
                 <div className="flex justify-between border-b pb-2">
                   <span className="font-semibold">{t("intro.pinCode")}:</span>
-                  <span>415404</span>
-                </div>
-              </div>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-government-blue mb-3">
-                {t("intro.landDistribution")}
-              </h3>
-              <div className="space-y-2 text-gray-700">
-                <div className="flex justify-between border-b pb-2">
-                  <span className="font-semibold">
-                    {t("intro.agriculturalLandArea")}:
-                  </span>
-                  <span>217 hectares</span>
-                </div>
-                <div className="flex justify-between border-b pb-2">
-                  <span className="font-semibold">
-                    {t("intro.residentialArea")}:
-                  </span>
-                  <span>64 hectares (12%)</span>
-                </div>
-                <div className="flex justify-between border-b pb-2">
-                  <span className="font-semibold">
-                    {t("intro.forestLand")}:
-                  </span>
-                  <span>35 hectares (6%)</span>
-                </div>
-                <div className="flex justify-between border-b pb-2">
-                  <span className="font-semibold">{t("intro.other")}:</span>
-                  <span>15 hectares (3%)</span>
+                  <span> {language === "en" ? 415404 : "४१५४०४"}</span>
                 </div>
               </div>
             </div>
@@ -173,31 +139,55 @@ export default function IntroductionPage() {
             {t("intro.basicInfrastructure")}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Education */}
             <div className="border-l-4 border-government-orange pl-4">
               <h3 className="font-bold text-lg mb-2">{t("intro.education")}</h3>
               <ul className="space-y-1 text-gray-700 text-sm sm:text-base">
-                <li>• {t("intro.primarySchools")}: 1</li>
-                <li>• {t("intro.secondarySchool")}: 0</li>
-                <li>• {t("intro.anganwadiCenters")}: 1</li>
-                <li>• {t("intro.library")}: 0</li>
+                <li>
+                  • {t("intro.primarySchools")}: {language === "en" ? "1" : "१"}
+                </li>
+                <li>
+                  • {t("intro.secondarySchool")}:{" "}
+                  {language === "en" ? "0" : "०"}
+                </li>
+                <li>
+                  • {t("intro.anganwadiCenters")}:{" "}
+                  {language === "en" ? "1" : "१"}
+                </li>
+                <li>
+                  • {t("intro.library")}: {language === "en" ? "0" : "०"}
+                </li>
               </ul>
             </div>
+
+            {/* Health */}
             <div className="border-l-4 border-government-green pl-4">
               <h3 className="font-bold text-lg mb-2">{t("intro.health")}</h3>
               <ul className="space-y-1 text-gray-700 text-sm sm:text-base">
-                <li>• {t("intro.primaryHealthCenter")}: 0</li>
-                <li>• {t("intro.subCenters")}: 1</li>
-                <li>• {t("intro.privateClinics")}: 1</li>
-                <li>• {t("intro.pharmacies")}: 1</li>
+                <li>
+                  • {t("intro.primaryHealthCenter")}:{" "}
+                  {language === "en" ? "0" : "०"}
+                </li>
+                <li>
+                  • {t("intro.subCenters")}: {language === "en" ? "1" : "१"}
+                </li>
+                <li>
+                  • {t("intro.privateClinics")}: {language === "en" ? "1" : "१"}
+                </li>
+                <li>
+                  • {t("intro.pharmacies")}: {language === "en" ? "1" : "१"}
+                </li>
               </ul>
             </div>
+
+            {/* Connectivity */}
             <div className="border-l-4 border-government-blue pl-4">
               <h3 className="font-bold text-lg mb-2">
                 {t("intro.connectivity")}
               </h3>
               <ul className="space-y-1 text-gray-700 text-sm sm:text-base">
                 <li>
-                  • {t("intro.pavedRoads")}:{t("intro.busServiceValue")}
+                  • {t("intro.pavedRoads")}: {t("intro.busServiceValue")}
                 </li>
                 <li>
                   • {t("intro.busService")}: {t("intro.available")}
@@ -205,19 +195,26 @@ export default function IntroductionPage() {
                 <li>
                   • {t("intro.internet")}: {t("intro.fiberOptic")}
                 </li>
-                <li>• {t("intro.mobileCoverage")}: 100%</li>
+                <li>
+                  • {t("intro.mobileCoverage")}:{" "}
+                  {language === "en" ? "100%" : "१००%"}
+                </li>
               </ul>
             </div>
+
+            {/* Water & Sanitation */}
             <div className="border-l-4 border-red-500 pl-4">
               <h3 className="font-bold text-lg mb-2">
                 {t("intro.waterSanitation")}
               </h3>
               <ul className="space-y-1 text-gray-700 text-sm sm:text-base">
                 <li>
-                  • {t("intro.pipedWater")}: 98% {t("intro.coverage")}
+                  • {t("intro.pipedWater")}: {language === "en" ? "98%" : "९८%"}{" "}
+                  {t("intro.coverage")}
                 </li>
                 <li>
-                  • {t("intro.toilets")}: 98% {t("intro.households")}
+                  • {t("intro.toilets")}: {language === "en" ? "98%" : "९८%"}{" "}
+                  {t("intro.households")}
                 </li>
                 <li>
                   • {t("intro.drainage")}: {t("intro.coveredDrains")}
@@ -227,12 +224,17 @@ export default function IntroductionPage() {
                 </li>
               </ul>
             </div>
+
+            {/* Electricity */}
             <div className="border-l-4 border-purple-500 pl-4">
               <h3 className="font-bold text-lg mb-2">
                 {t("intro.electricity")}
               </h3>
               <ul className="space-y-1 text-gray-700 text-sm sm:text-base">
-                <li>• {t("intro.electrification")}: 100%</li>
+                <li>
+                  • {t("intro.electrification")}:{" "}
+                  {language === "en" ? "100%" : "१००%"}
+                </li>
                 <li>
                   • {t("intro.streetLights")}: {t("intro.ledSolar")}
                 </li>
@@ -240,7 +242,8 @@ export default function IntroductionPage() {
                   • {t("intro.agriculturalPower")}: {t("intro.threePhase")}
                 </li>
                 <li>
-                  • {t("intro.backup")}: {t("intro.transformers")}: 3
+                  • {t("intro.backup")}: {t("intro.transformers")}:{" "}
+                  {language === "en" ? "3" : "३"}
                 </li>
               </ul>
             </div>

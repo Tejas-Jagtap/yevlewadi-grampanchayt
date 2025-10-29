@@ -59,8 +59,8 @@ export const homeTranslations = {
     en: "President, Dispute-Free Village Committee",
   },
   "officials.secretary": {
-    mr: "सचिव",
-    en: "Secretary",
+    mr: "ग्रामपंचायत अधिकारी",
+    en: "Village Council Officer",
   },
   "officials.gramSevak": {
     mr: "ग्रामसेवक",

@@ -24,7 +24,7 @@ const Officials = () => {
       MarathiName: "श्री. मयूर भीमराव जगताप ",
       EnglishName: "Mr. Mayur Bhimrao Jagtap",
       positionKey: "officials.upSarpanch",
-      image: "/images/upsarpanch.jpg",
+      image: "/images/upSarpanch.jpg",
       phone: "+91-96233747481",
       phoneDevnagari: "+९१-९६२३७४७४८१",
     },
